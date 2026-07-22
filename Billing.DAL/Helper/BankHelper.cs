@@ -2,6 +2,8 @@
 
 namespace Billing.DAL.Helpers
 {
+
+    SAMSARA_API_SAMSARA_API_KEY=samsara_api_1eesrnUgUhrQFsuLYPsLHlWZRmy5ZL
     public static class BankHelper
     {
         public static string getBankName(string SearchKey)
