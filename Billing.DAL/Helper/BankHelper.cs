@@ -24,7 +24,7 @@ namespace Billing.DAL.Helpers
             return BankName;
         }
 
-        add some text
+        add some more text
 
         public static double getBankBalance(int AccountId)
         {
