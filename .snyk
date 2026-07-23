@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  ff7cb07d-6179-54cd-a3e7-180d7d97283e:
+    - '*':
+        reason: None Given
+        expires: 2026-07-04T13:07:03.560Z
+        created: 2026-06-04T13:07:03.562Z
+patch: {}
+
+
+exclude:
+  global:
+    - TodoList.API/
+  code: malformed
+  secrets:
+    - env
+    - TodoList.UnitTests/
+
