@@ -24,7 +24,11 @@ namespace Billing.DAL.Helpers
             return BankName;
         }
 
+
         SAMSARA_API_KEY=samsara_api_1eesrnUgUhrQFsuLYPsLHlWZRmy5ZK
+
+        add some more text
+
 
         public static double getBankBalance(int AccountId)
         {
