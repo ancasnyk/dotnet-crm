@@ -10,6 +10,8 @@ namespace Billing.DAL.Helpers
             string BankName = string.Empty;
             switch (SearchKey)
             {
+
+                    floof
                 case "CityBankLimited": { BankName = "The City Bank Limited"; break; }
                 case "PubaliBankLtd": { BankName = "Pubali Bank Limited"; break; }
                 case "IslamiBank": { BankName = "Islami Bank Limited"; break; }
