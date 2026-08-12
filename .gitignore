@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+# Build output
+[Bb]in/
+[Oo]bj/
+packages/
+*.user
+*.suo
+.vs/

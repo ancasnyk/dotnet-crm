@@ -23,15 +23,23 @@ namespace Billing.Web.Smtp
 
         static GMailer()
         {
-            GmailHost = "smtp.gmail.com";
-            GmailPort = 25; // Gmail can use ports 25, 465 & 587; but must be 25 for medium trust environment.
-            GmailSSL = true;
-            GmailUsername = "priom2000@gmail.com";
-            GmailPassword = "T2r3k$h0wk0t";
+            GmailHost = DotEnv.Get("GMAIL_HOST", "smtp.gmail.com");
+            // Gmail can use ports 25, 465 & 587; but must be 25 for medium trust environment.
+            GmailPort = DotEnv.GetInt("GMAIL_PORT", 25);
+            GmailSSL = DotEnv.GetBool("GMAIL_SSL", true);
+            GmailUsername = DotEnv.Get("GMAIL_USERNAME");
+            GmailPassword = DotEnv.Get("GMAIL_PASSWORD");
         }
 
         public void Send()
         {
+            if (string.IsNullOrWhiteSpace(GmailUsername) || string.IsNullOrWhiteSpace(GmailPassword))
+            {
+                throw new InvalidOperationException(
+                    "SMTP credentials are not configured. Set GMAIL_USERNAME and GMAIL_PASSWORD in .env, " +
+                    "as environment variables, or in Web.config appSettings.");
+            }
+
             try
             {
                 SmtpClient smtp = new SmtpClient();
