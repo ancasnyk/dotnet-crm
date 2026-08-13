@@ -11,7 +11,7 @@ namespace Billing.DAL
 
         static DataAccess()
         {
-            String dataPassKey = "IIM@cda2011";
+            String dataPassKey = "IIM@cda2pdj2ncp1";
 
             String encryptedConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["BillingCString"].ConnectionString;
 
