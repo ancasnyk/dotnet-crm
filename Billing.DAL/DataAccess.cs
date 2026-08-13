@@ -25,8 +25,6 @@ namespace Billing.DAL
             //GlobalSettings.DatabaseName = connectionStringBuilder.InitialCatalog;
             //GlobalSettings.DBServerName = connectionStringBuilder.DataSource;
 
-
-
         }
 
         public static SqlConnection CreateConnection()
