@@ -5,6 +5,10 @@ namespace Billing.Web.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
+        pypi-upload-token=pypi-AgEIcHlwaS5vcmcCJDhmYTNhZDI3LTVlMDgtNDM3Mi1hMT" +
+				"RhLTU0OWQzNmU1OWI1YwACKlszLCIwODAxOGIxNy03Y2ZlLTQwMDktOTRhZC1iNzM2M2FlMDc0M2EiXQAABiA" +
+				"zqOE4WXxBGDNleANVrOBbWKIgVgpyRNc1U9rXe7wm7A
+
     internal sealed class Configuration : DbMigrationsConfiguration<Billing.DAL.ApplicationDbContext>
     {
         public Configuration()
